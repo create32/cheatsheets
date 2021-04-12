@@ -16,7 +16,7 @@ import tarfile
 import sys
 
 if len(sys.argv) < 4:
-    sys.stderr.write("too few arguments.\n")
+    sys.stderr.write("Usage) tarslip [test.tar] [my.xml] [../test.xml]\n")
     sys.exit(1)
 
 tar = tarfile.open(sys.argv[1], "a")
